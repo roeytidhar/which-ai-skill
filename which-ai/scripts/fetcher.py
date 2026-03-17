@@ -10,8 +10,15 @@ except AttributeError:
 else:
     ssl._create_default_https_context = _create_unverified_https_context
 
-def fetch_openrouter_models() -> List[Dict[str, Any]]:
+def fetch_openrouter_models(openrouter_file: str = "") -> List[Dict[str, Any]]:
     """Fetches live pricing, context, and release dates from OpenRouter."""
+    if openrouter_file:
+        try:
+            with open(openrouter_file, 'r', encoding='utf-8') as f:
+                return json.loads(f.read())['data']
+        except Exception as e:
+            print(f"Error reading local OpenRouter file: {e}")
+            
     try:
         req = urllib.request.Request('https://openrouter.ai/api/v1/models', headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=5) as response:
@@ -29,9 +36,24 @@ def fetch_openrouter_models() -> List[Dict[str, Any]]:
             {"id": "openai/gpt-4o", "pricing": {"prompt": "5.00"}, "context_length": 128000, "architecture": {"modality": "text, image"}, "created": 1715558400}
         ]
 
-def fetch_elo_data() -> Dict[str, float]:
+def fetch_elo_data(elo_file: str = "") -> Dict[str, float]:
     """Fetches real LMSYS Elo scores from a community open-data mirror."""
     scores = {}
+    
+    if elo_file:
+        try:
+            with open(elo_file, 'r', encoding='utf-8') as f:
+                data = json.loads(f.read())
+                for item in data:
+                    model_id = item.get('model_id', '').lower()
+                    elo = item.get('elo_score', 0)
+                    if model_id and elo:
+                        scores[model_id] = float(elo)
+                        scores[model_id.split('/')[-1]] = float(elo)
+            return scores
+        except Exception as e:
+            print(f"Error reading local Elo file: {e}")
+            
     try:
         # Pulls from an open community JSON mirror
         url = 'https://raw.githubusercontent.com/artificialanalysis/open-data/main/models.json'

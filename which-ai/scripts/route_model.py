@@ -14,9 +14,11 @@ def main():
     parser.add_argument("--budget", type=float, default=5.00)
     parser.add_argument("--deployment", choices=["cloud", "local"], default="cloud")
     parser.add_argument("--modality", choices=["text", "vision", "coding"], default="text")
+    parser.add_argument("--openrouter-file", type=str, default="", help="Path to pre-downloaded openrouter models json")
+    parser.add_argument("--elo-file", type=str, default="", help="Path to pre-downloaded elo models json")
     args = parser.parse_args()
     
-    router = ModelRouter(args.budget, args.deployment, args.modality)
+    router = ModelRouter(args.budget, args.deployment, args.modality, args.openrouter_file, args.elo_file)
     result = router.get_recommendation()
     
     if "error" in result:

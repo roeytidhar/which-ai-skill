@@ -7,15 +7,16 @@ import fetcher
 class ModelRouter:
     OPEN_BRANDS = ['llama', 'qwen', 'mistral', 'gemma', 'deepseek', 'pixtral', 'phi']
 
-    def __init__(self, budget: float, deployment: str, modality: str):
+    def __init__(self, budget: float, deployment: str, modality: str, openrouter_file: str = "", elo_file: str = ""):
         self.budget = budget
         self.deployment = deployment
         self.modality = modality
+        self.openrouter_file = openrouter_file
         self.is_local = (deployment == "local")
         self.local_ram = hardware.get_system_ram_gb() if self.is_local else 999.0
         
         # Load the real Elo scores into memory
-        self.elo_data = fetcher.fetch_elo_data()
+        self.elo_data = fetcher.fetch_elo_data(elo_file)
 
     def estimate_elo(self, model_id: str, price_per_m: float, context: int, created_timestamp: int) -> float:
         """Fallback heuristic: Estimates Elo for brand new models that aren't on the leaderboard yet."""
@@ -47,7 +48,7 @@ class ModelRouter:
         return min(elo, 1320.0) # Cap the estimate so it doesn't break the scale
 
     def get_recommendation(self) -> Dict[str, Any]:
-        models_data = fetcher.fetch_openrouter_models()
+        models_data = fetcher.fetch_openrouter_models(self.openrouter_file)
             
         valid_models = []
         for model in models_data:
