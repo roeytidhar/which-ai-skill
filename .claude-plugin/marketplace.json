@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "which-ai",
+      "name": "Which AI",
       "description": "An intelligent, intent-based routing skill that matches AI tasks to the best LLM.",
       "source": "./",
       "category": "developer-tools"
