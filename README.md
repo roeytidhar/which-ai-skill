@@ -30,7 +30,7 @@ If you’re still hardcoding “model-name” into your code, your system is lik
 | Feature | Description | Real-Time Data Source |
 | :--- | :--- | :--- |
 | **Hardware Scanning** | Verifies local RAM and power availability for model compatibility. | System Context |
-| **Performance Metrics** | Pulls live intelligence (Elo) scores for accuracy matching. | LMBMT / Community |
+| **Performance Metrics** | Pulls live intelligence (Elo) scores for accuracy matching. | LMSYS / Community |
 | **Cost Optimization** | Filters and selects models based on real-time input/output pricing. | OpenRouter API |
 | **Intent-Based Routing** | Matches model modality (Coding, Vision, Logic) to task intent. | Skill Heuristics |
 
