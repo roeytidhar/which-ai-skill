@@ -2,7 +2,7 @@
   <img src="which-ai.png" width="800" alt="Which AI Branding">
 </p>
 
-# Which AI 🤖
+# Which AI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub release](https://img.shields.io/github/v/release/roeytidhar/which-ai-skills.svg)](https://github.com/roeytidhar/which-ai-skills/releases)
@@ -16,7 +16,7 @@ If you’re still hardcoding “model-name” into your code, your system is lik
 
 ---
 
-## Use Cases 💡
+## Use Cases
 
 - **Dynamic Agent Orchestration**: Automatically route tasks to the most cost-effective or highest intelligence model at runtime.
 - **Hardware-Aware Local Deployment**: Ensure local models only run if the system has sufficient RAM and power.
@@ -25,7 +25,7 @@ If you’re still hardcoding “model-name” into your code, your system is lik
 
 ---
 
-## Key Features ⚙️
+## Key Features
 
 | Feature | Description | Real-Time Data Source |
 | :--- | :--- | :--- |
@@ -36,7 +36,7 @@ If you’re still hardcoding “model-name” into your code, your system is lik
 
 ---
 
-## Data Origin & Costs 📊
+## Data Origin & Costs
 
 Which AI is designed to be a Zero-Cost decision primitive.
 
@@ -48,7 +48,7 @@ Which AI is designed to be a Zero-Cost decision primitive.
 
 ---
 
-## IT / ISD Compliance & FAQ 🛡️
+## IT / ISD Compliance & FAQ
 
 Designed with enterprise security standards in mind, Which AI is optimized for approval by Information Security Departments (ISD).
 
@@ -69,7 +69,7 @@ Designed with enterprise security standards in mind, Which AI is optimized for a
 
 ---
 
-## Installation & Integration 🚀
+## Installation & Integration
 
 ### Claude Code & OpenCode
 This skill is designed as an atomic, tool-calling primitive.
@@ -87,7 +87,7 @@ Which AI is a first-class Claude CoWork plugin.
 
 ---
 
-## How it Works 🧠
+## How it Works
 
 Which AI acts as a **Real-Time Decision Primitive**. When queried, it bypasses the "static choice" bottleneck by decoupling the decision layer from the execution layer.
 
@@ -97,7 +97,7 @@ Which AI acts as a **Real-Time Decision Primitive**. When queried, it bypasses t
 
 ---
 
-## Contributing 🤝
+## Contributing
 
 This is the first of many skills building towards simplified agentic systems. We welcome contributions that add new data sources or platform integrations.
 
