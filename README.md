@@ -1,4 +1,4 @@
-# Which-AI: The Intent-Based Orchestrator
+# Which-AI: Stop guessing which AI model to use.
 
 Welcome to Which-AI! This is a simple but powerful skill designed to help AI agents and developers match tasks to the best Large Language Model for the job. 
 
