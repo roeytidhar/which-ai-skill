@@ -37,7 +37,7 @@ Which-AI is natively structured to be a Claude CoWork plugin! Here is exactly ho
 2. Click the `+` icon next to the "Personal" tab in the "Browse plugins" menu.
 3. Select **Add plugin - personal** (if prompted), then click the `+` icon again.
 4. Select **Add marketplace from GitHub**.
-5. Enter `roeytidhar/which-ai-skill` in the URL field and click **Sync**.
+5. Enter `roeytidhar/which-ai-orchestrator` in the URL field and click **Sync**.
 6. Hover over the **Which AI** card and click **Install**.
 7. Now just ask Claude: "Can you use the which-ai skill to find a coding model under $3?" and watch it work!
 
