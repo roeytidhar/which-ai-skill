@@ -1,7 +1,11 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "which-ai",
-  "version": "1.1.16",
+  "version": "1.1.17",
+  "metadata": {
+    "version": "1.1.17",
+    "description": "A real-time directory of AI models that allows your AI agent to advise and pick the ideal LLM for the user's task."
+  },
   "description": "A real-time directory of AI models that allows your AI agent to advise and pick the ideal LLM for the user's task.",
   "owner": {
     "name": "Roey Tidhar",
@@ -14,6 +18,7 @@
       "displayName": "Which AI",
       "title": "Which AI",
       "label": "Which AI",
+      "version": "1.1.17",
       "description": "A real-time directory of AI models that allows your AI agent to advise and pick the ideal LLM for the user's task.",
       "source": "./which-ai",
       "category": "developer-tools"
