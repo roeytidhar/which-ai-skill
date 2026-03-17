@@ -1,8 +1,8 @@
 {
   "name": "which-ai",
   "displayName": "Which AI",
-  "version": "1.1.8",
-  "description": "The phonebook of AI models — easily pick the perfect LLM for the task.",
+  "version": "1.1.9",
+  "description": "A directory of AI models that allows your AI agent to advise and pick the ideal LLM for the user's task.",
   "author": {
     "name": "Roey Tidhar",
     "email": "roey@example.com",
