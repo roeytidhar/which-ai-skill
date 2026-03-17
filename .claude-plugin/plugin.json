@@ -1,0 +1,18 @@
+{
+  "name": "which-ai",
+  "version": "1.1.2",
+  "description": "An intelligent, intent-based routing skill that matches AI tasks to the best LLM.",
+  "author": {
+    "name": "Roey Tidhar",
+    "email": "roey@example.com",
+    "url": "https://github.com/roeytidhar"
+  },
+  "keywords": [
+    "agents",
+    "routing",
+    "llm",
+    "cost-optimization"
+  ],
+  "homepage": "https://github.com/roeytidhar/which-ai-skill",
+  "license": "MIT"
+}
