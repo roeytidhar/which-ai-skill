@@ -36,6 +36,39 @@ If you’re still hardcoding “model-name” into your code, your system is lik
 
 ---
 
+## Data Origin & Costs 📊
+
+Which AI is designed to be a Zero-Cost decision primitive.
+
+- **OpenRouter (Public API)**: Provides real-time model pricing, context length, and architecture metadata. No API key required for metadata access.
+- **Artificial Analysis (GitHub Mirror)**: Provides verified LMSYS Elo scores for accurate intelligence matching.
+- **Resource Requirements**: $0. All data is fetched via public, unauthenticated GET requests. 
+
+*Note: While Which AI is free to use, the AI models it recommends may have their own execution costs depending on your provider.*
+
+---
+
+## IT / ISD Compliance & FAQ 🛡️
+
+Designed with enterprise security standards in mind, Which AI is optimized for approval by Information Security Departments (ISD).
+
+**Q: Does this skill transmit user prompts or sensitive data?**
+> **A:** No. Which AI only fetches model metadata. It never accesses or transmits the content of your conversations or internal data.
+
+**Q: Are any API keys or credentials stored by this skill?**
+> **A:** No. All data fetching is performed via public, unauthenticated HTTPS GET requests. No secrets are required or stored.
+
+**Q: What are the network dependencies?**
+> **A:** The skill makes outbound HTTPS requests to `openrouter.ai` and `raw.githubusercontent.com`. No other external connections are made.
+
+**Q: Does it require administrative or root privileges?**
+> **A:** No. It runs entirely in the user-space context of the agent (Claude Code, OpenCode, or CoWork).
+
+**Q: Is there any persistent local storage?**
+> **A:** No. The skill operates in-memory and only uses local system context (RAM/Power) for real-time hardware matching.
+
+---
+
 ## Installation & Integration 🚀
 
 ### Claude Code & OpenCode
