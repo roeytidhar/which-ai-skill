@@ -32,11 +32,13 @@ Which-AI works seamlessly with:
 
 ### Using Which-AI in Claude CoWork
 
-Which-AI is natively structured to be a Claude CoWork plugin! Here is how to get started:
+Which-AI is natively structured to be a Claude CoWork plugin! Here is exactly how to install it:
 1. Open your Claude CoWork environment.
-2. Open the Plugin Manager and select to "Add marketplace from GitHub".
-3. Enter `roeytidhar/which-ai-skill` and sync the plugin.
-4. Just ask Claude: "Can you use the which-ai skill to find a coding model under $3?" and watch it work!
+2. Click the `+` icon next to the "Personal" tab in the "Browse plugins" menu.
+3. Select **Add marketplace from GitHub**.
+4. Enter `roeytidhar/which-ai-skill` and click **Sync**.
+5. Once the marketplace is added, find the "Which ai" card and click the **Install** button.
+6. Now just ask Claude: "Can you use the which-ai skill to find a coding model under $3?" and watch it work!
 
 ## Contributing
 
