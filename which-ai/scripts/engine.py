@@ -48,8 +48,6 @@ class ModelRouter:
 
     def get_recommendation(self) -> Dict[str, Any]:
         models_data = fetcher.fetch_openrouter_models()
-        if not models_data:
-            return {"error": "Fatal Error: Could not connect to public data sources."}
             
         valid_models = []
         for model in models_data:

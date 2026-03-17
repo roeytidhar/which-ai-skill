@@ -17,8 +17,17 @@ def fetch_openrouter_models() -> List[Dict[str, Any]]:
         with urllib.request.urlopen(req, timeout=5) as response:
             return json.loads(response.read().decode())['data']
     except Exception as e:
-        print(f"Error fetching OpenRouter data: {e}")
-        return []
+        print(f"Error fetching OpenRouter data: {e}. Using offline fallback directory.")
+        return [
+            {"id": "meta-llama/llama-3.2-1b-instruct", "pricing": {"prompt": "0"}, "context_length": 128000, "architecture": {"modality": "text"}, "created": 1727136000},
+            {"id": "meta-llama/llama-3.2-3b-instruct", "pricing": {"prompt": "0"}, "context_length": 128000, "architecture": {"modality": "text"}, "created": 1727136000},
+            {"id": "microsoft/phi-3-mini-128k-instruct", "pricing": {"prompt": "0"}, "context_length": 128000, "architecture": {"modality": "text"}, "created": 1713830400},
+            {"id": "google/gemma-2-2b-it", "pricing": {"prompt": "0"}, "context_length": 8192, "architecture": {"modality": "text"}, "created": 1722470400},
+            {"id": "mistralai/mistral-7b-instruct-v0.3", "pricing": {"prompt": "0.05"}, "context_length": 32768, "architecture": {"modality": "text"}, "created": 1716336000},
+            {"id": "qwen/qwen-2.5-coder-7b-instruct", "pricing": {"prompt": "0.15"}, "context_length": 32768, "architecture": {"modality": "text"}, "created": 1726704000},
+            {"id": "anthropic/claude-3.5-sonnet", "pricing": {"prompt": "3.00"}, "context_length": 200000, "architecture": {"modality": "text"}, "created": 1718841600},
+            {"id": "openai/gpt-4o", "pricing": {"prompt": "5.00"}, "context_length": 128000, "architecture": {"modality": "text, image"}, "created": 1715558400}
+        ]
 
 def fetch_elo_data() -> Dict[str, float]:
     """Fetches real LMSYS Elo scores from a community open-data mirror."""
