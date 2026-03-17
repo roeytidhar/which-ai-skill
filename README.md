@@ -1,46 +1,50 @@
-# Which-AI: Stop guessing which AI model to use.
+<p align="center">
+  <img src="which-ai.png" width="800" alt="Which AI Branding">
+</p>
 
-Welcome to Which-AI! This is a simple but powerful skill designed to help AI agents and developers match tasks to the best Large Language Model for the job. 
+# Which AI
 
-Choosing the right model can be tricky. You want the highest intelligence for complex tasks, but you also want to manage your budget and respect the environment the agent is running in (like local versus cloud). Which-AI solves this by automatically routing requests based on real world data.
+**Stop guessing which AI model to use.**
 
-## What it does
+The biggest bottleneck in building real AI systems today isn't just the brain. It is the choice. There are hundreds of LLMs and one of the biggest pains is trying to choose the right one without having to be a technical expert in every single benchmark.
 
-Which-AI acts as a dynamic router. It takes three simple inputs:
-1. **Budget:** How much are you willing to spend per million input tokens?
-2. **Deployment:** Are you running this in the `cloud` or on a `local` machine?
-3. **Modality:** Do you need `text`, `vision`, or `coding` capabilities?
+If you’re still hardcoding “model-name” into your code, your system is likely already outdated.
 
-Using these inputs, the skill checks live data from OpenRouter and community Elo scores to recommend the perfect model. If you are running locally, it even checks your system's RAM to make sure the recommended model will actually fit!
+## The Agentic Solution
 
-## How to use this skill
+**Which AI** is a real-time decision primitive designed to solve the LLM routing problem. 
 
-This skill is designed to be easily plugged into any agentic platform that supports markdown based skills.
+1. **Strategic Routing:** Picking the right model with real-time data is how we simplify the process of generating AI systems at scale. Instead of you having to choose, your system uses Which AI as a live information point to match the perfect model to your specific need in that exact moment.
+2. **Dynamic Scaling:** If your system needs to generate a new agent on the fly, this is not just a "nice-to-have." It is a requirement. You cannot predict what hardware or budget a new agent will need, but **Which AI** can.
 
-### Supported Platforms
-Which-AI works seamlessly with:
-* Claude Code
-* OpenCode
-* Claude CoWork
-* Any custom agent framework that supports standard skill schemas
+## How it Works
 
-### Adding Which-AI to your project
+My skill checks your runtime context in real-time:
 
-1. Clone or download this repository.
-2. Copy the `which-ai` folder into your project's skills or tools directory.
-3. Make sure your agent has permission to execute bash scripts and run Python.
+- **Hardware:** It scans your RAM and power to see if a model can actually run on your machine (crucial for local-first agents).
+- **Performance:** It pulls live pricing and intelligence (Elo) scores for every model available.
+- **Decision:** It picks the winner so your system gets the best results for the lowest cost.
 
-### Using Which-AI in Claude CoWork
+---
 
-Which-AI is natively structured to be a Claude CoWork plugin! Here is exactly how to install it:
-1. Open your Claude CoWork environment.
-2. Click the `+` icon next to the "Personal" tab in the "Browse plugins" menu.
-3. Select **Add plugin - personal** (if prompted), then click the `+` icon again.
-4. Select **Add marketplace from GitHub**.
-5. Enter `roeytidhar/which-ai-skills` in the URL field and click **Sync**.
-6. Hover over the **Which AI** card and click **Install**.
-7. Now just ask Claude: "Can you use the which-ai skill to find a coding model under $3?" and watch it work!
+## Installation & Integration
 
-## Contributing
+### Claude Code & OpenCode
+This skill is designed to be atomic and tool-calling ready. Copy the `which-ai` folder into your project's skills directory.
 
-We would absolutely love your help to make Which-AI even better. Whether it is adding new data sources, improving the scoring heuristic, or adding new platforms, your contributions are welcome. Feel free to open an issue or submit a pull request!
+### Claude CoWork
+Which AI is natively structured to be a Claude CoWork plugin.
+1. Open Claude CoWork.
+2. Click the `+` icon in the **Browse plugins** menu.
+3. Select **Add marketplace from GitHub**.
+4. Enter `roeytidhar/which-ai-skills` and click **Sync**.
+5. Install the **Which AI** card.
+
+---
+
+## The Vision
+This is the first of many skills I'm building to make creating agentic systems as simple as a single command. Let's stop guessing and start routing.
+
+[GitHub Repository](https://github.com/roeytidhar/which-ai-skills)
+
+#AI #AgenticSystems #OpenSource #LLMOps #Claude #WhichAI #Engineering
