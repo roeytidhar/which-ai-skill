@@ -1,6 +1,7 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "which-ai",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "An intelligent, intent-based routing skill that matches AI tasks to the best LLM.",
   "owner": {
     "name": "Roey Tidhar",
